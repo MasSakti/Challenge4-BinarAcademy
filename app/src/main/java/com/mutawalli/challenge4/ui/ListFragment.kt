@@ -55,7 +55,7 @@ class ListFragment : Fragment() {
 
         binding.tvLogoutButton.setOnClickListener {
             val dialogInflate =
-                LayoutInflater.from(it.context).inflate(R.layout.dialog_delete, null, false)
+                LayoutInflater.from(it.context).inflate(R.layout.dialog_logout, null, false)
             val dialogBuilder = AlertDialog.Builder(it.context)
             dialogBuilder.setView(dialogInflate)
 
