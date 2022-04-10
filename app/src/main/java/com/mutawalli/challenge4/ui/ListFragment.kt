@@ -59,8 +59,8 @@ class ListFragment : Fragment() {
             val dialogBuilder = AlertDialog.Builder(it.context)
             dialogBuilder.setView(dialogInflate)
 
-            val btnNo: Button = dialogInflate.findViewById(R.id.btnNo)
-            val btnYes: Button = dialogInflate.findViewById(R.id.btnYes)
+            val btnNo: Button = dialogInflate.findViewById(R.id.btnLogoutNo)
+            val btnYes: Button = dialogInflate.findViewById(R.id.btnLogoutYes)
             val dialog = dialogBuilder.create()
 
             btnNo.setOnClickListener {
