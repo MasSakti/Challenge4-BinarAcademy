@@ -49,26 +49,43 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cv_home_top" />
 
-    <ImageView
+    <Button
         android:id="@+id/btnRefresh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="20dp"
-        android:src="@drawable/ic_refresh"
-        app:layout_constraintBottom_toTopOf="@id/rvListData"
+        android:layout_marginEnd="15dp"
+        android:text="@string/btnRefresh"
+        app:layout_constraintBottom_toBottomOf="@id/tvJudulList"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@id/tvJudulList" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvListData"
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/rvListData"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/tvJudulList"-->
+    <!--        tools:listitem="@layout/list_item" />-->
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvJudulList"
-        tools:listitem="@layout/list_item" />
+        app:layout_constraintTop_toBottomOf="@id/tvJudulList">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvListData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            tools:listitem="@layout/list_item" />
+    </LinearLayout>
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -79,6 +96,7 @@
         android:layout_marginBottom="32dp"
         android:foregroundGravity="bottom"
         android:src="@drawable/ic_add"
+        app:backgroundTint="@color/pale"
         app:fabSize="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent" />

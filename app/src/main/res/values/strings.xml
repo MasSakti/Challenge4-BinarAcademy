@@ -19,12 +19,13 @@
     <string name="etJudulEdit">Masukkan Judul</string>
     <string name="etCatatanEdit">Masukkan Catatan</string>
     <string name="btnSimpanEdit">Simpan</string>
-    <string name="tvDeleteData">Hapus Data ?</string>
+    <string name="tvDeleteData">Yakin untuk Menghapus Data ?</string>
     <string name="btnYes">Iya</string>
     <string name="btnNo">Tidak</string>
-    <string name="tvUserDisplay">Welcome, .......</string>
+    <string name="tvUserDisplay">Welcome, %1$s</string>
     <string name="tvLogoutButton">Logout</string>
     <string name="tvJudulList">Home</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btnRefresh">Refresh</string>
+    <string name="tvLogoutList">Yakin Untuk Logout ?</string>
 </resources>
